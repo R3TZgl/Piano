@@ -1,6 +1,8 @@
 import pygame
 from pygame.locals import *
 from sys import exit
+from musica import som
+from time import sleep
     
 pygame.init()
 
@@ -53,30 +55,32 @@ while True:
     comand = pygame.key.get_pressed()
     if comand[pygame.K_z]:
         pygame.draw.rect(tela, branco, (25, 25, l_tecla, a_tecla))
-        #pygame.mixer.music.play(1)
+        som("Notas/do.wav")
     
     if comand[pygame.K_x]:
         pygame.draw.rect(tela, branco, (25 + l_tecla, 25, l_tecla, a_tecla))
-        pygame.mixer.music.load("Notas/re.wav")
-        pygame.mixer.music.play(1)
+        som("Notas/re.wav")
         
     if comand[pygame.K_c]:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 2, 25, l_tecla, a_tecla))
+        som("Notas/mi.wav")
     
     if comand[pygame.K_v]:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 3, 25, l_tecla, a_tecla))
+        som("Notas/fa.wav")
     
     if comand[pygame.K_b]:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 4, 25, l_tecla, a_tecla))
+        som("Notas/sol.wav")
     
     if comand[pygame.K_n]:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 5, 25, l_tecla, a_tecla))
-        pygame.mixer.music.load("Notas/la.wav")
-        pygame.mixer.music.play(1)
+        som("Notas/la.wav")
+
     
     if comand[pygame.K_m]:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 6, 25, l_tecla, a_tecla))
-
+        som("Notas/si.wav")
 
 
 
