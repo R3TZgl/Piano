@@ -6,6 +6,7 @@ from time import sleep
     
 pygame.init()
 
+
 #Dimensões da Tela
 l_tela = 750
 a_tela = 550
@@ -29,10 +30,6 @@ azul = (0,0,255)
 violeta = (75,0,130)
 cinza = (50,50,50)
 preto = (0,0,0)
-
-#Notas
-#C = pygame.mixer.music.load('c3.wav')
-
 
 
 
@@ -82,23 +79,13 @@ while True:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 5, 25, l_tecla, a_tecla))
         pygame.draw.rect(tela, preto, (25 + l_tecla * 5, 25, l_tecla, a_tecla),2)
         som("Notas/la.wav")
-
     
     if comand[pygame.K_m]:
         pygame.draw.rect(tela, branco, (25 + l_tecla * 6, 25, l_tecla, a_tecla))
         pygame.draw.rect(tela, preto, (25 + l_tecla * 6, 25, l_tecla, a_tecla),2)
         som("Notas/si_fade.wav")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
 
     pygame.display.update()
+print("Fim.")
