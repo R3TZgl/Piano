@@ -2,7 +2,6 @@ import pygame
 from time import sleep
 
 
-
 def som(a):
     pygame.display.update()
     pygame.mixer.music.load(a)
