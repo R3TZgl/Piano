@@ -88,5 +88,3 @@ while True:
    
 
     pygame.display.update()
-asdf
-print('sim')
