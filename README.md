@@ -10,7 +10,7 @@ Este jogo funciona de forma semelhante a um piano, com 7 teclas e cada uma com s
 
 ### Imagem
 
-![Teclado](https://pt.dreamstime.com/imagem-de-stock-piano-colorido-arco-%C3%ADris-image13157551)
+![Teclado](img.png)
 
 ## Base do código
 
